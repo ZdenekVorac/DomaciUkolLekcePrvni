@@ -1,5 +1,6 @@
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 public class Main {
 
@@ -54,6 +55,26 @@ public class Main {
         System.out.println("Metoda *skoro* bez chybičky!");
     }
 
+    public static void evidenceProdejcu() {
+        String jmeno = "Zdeněk";
+        String prijmeni = "Voráč";
+        System.out.println(jmeno+" "+prijmeni);
+        LocalDate datumNarozeni = LocalDate.of(1985, 06, 15);
+        System.out.println(datumNarozeni);
+        int pocetSjednanychSmluv = 25;
+        System.out.println(pocetSjednanychSmluv);
+        int prodaneMrkve = 5;
+        System.out.println(prodaneMrkve+"t");
+        String mesto = "Šumperk";
+        System.out.println(mesto);
+        String SPZ = "3M3 5577";
+        System.out.println(SPZ);
+        BigDecimal spotreba = BigDecimal.valueOf(7.3);
+        System.out.println(spotreba+" l/100km");
+        String IP = "192.168.67.76";
+        System.out.println(IP);
+    }
+
     public static void main(String[] args) {
         System.out.println("Oprav chyby a spusť všechny metody!");
         System.out.println("Komentáře odstraníš klávesovou "
@@ -68,5 +89,6 @@ public class Main {
         ukol7();
         ukol8();
         ukol9();
+        evidenceProdejcu();
     }
 }
